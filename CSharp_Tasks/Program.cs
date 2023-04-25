@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using System.Collections;
+using System.Linq;
 
 // Join two strings zipper style
 Console.WriteLine(joinStrings("abc", "rtqwwe"));
@@ -29,9 +30,25 @@ static string joinStrings(string str1, string str2)
 }
 
 // Palindrome
-Console.WriteLine(palindrome(121));
+Console.WriteLine(palindrome("racecar"));
+Console.WriteLine(palindrome2(121));
 
-static bool palindrome(int n)
+static bool palindrome(string str)
+{
+    bool res = false;
+    string rev = "";
+
+    rev = string.Join("", str.ToString().Split("").Reverse());
+
+    if (rev == str)
+    {
+        res = true;
+    }
+
+    return res;
+}
+
+static bool palindrome2(int n)
 {
     bool res = false;
     int copyOfN = n;
@@ -50,7 +67,6 @@ static bool palindrome(int n)
 
     return res;
 }
-
 
 // Fizz Buzz
 Array.ForEach(fizzBuzz(15), Console.WriteLine);
