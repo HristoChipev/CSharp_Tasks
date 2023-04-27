@@ -3,7 +3,7 @@ namespace CSharp_Tasks
 {
     public class JoinStrs
     {
-        public static string joinStrings(string str1, string str2)
+        public static string JoinStringsM(string str1, string str2)
         {
             string res = "";
             int diffInLenght = Math.Abs(str1.Length - str2.Length);

@@ -1,9 +1,9 @@
 ﻿using System;
 namespace CSharp_Tasks
 {
-	public class FizzBuzz
+    public class FizzBuzz
     {
-        public static string[] fizzBuzz(int n)
+        public static string[] FizzBuzzM(int n)
         {
             string[] arr = new string[n];
             string res = "";
@@ -20,7 +20,7 @@ namespace CSharp_Tasks
 
             return arr;
         }
-        
-	}
+
+    }
 }
 

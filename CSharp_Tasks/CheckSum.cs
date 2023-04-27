@@ -3,7 +3,7 @@ namespace CSharp_Tasks
 {
     public class CheckSum
     {
-        public static bool checkSum(string str1, string str2, string targetStr)
+        public static bool CheckSumM(string str1, string str2, string targetStr)
         {
             int sum = 0;
             int targetSum = 0;
@@ -33,7 +33,7 @@ namespace CSharp_Tasks
             }
 
             return sum == targetSum;
-        }    
+        }
     }
 }
 

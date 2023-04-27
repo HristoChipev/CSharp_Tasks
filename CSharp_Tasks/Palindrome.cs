@@ -3,7 +3,7 @@ namespace CSharp_Tasks
 {
     public class Palindrome
     {
-        public static bool palindrome(string str)
+        public static bool PalindromeM(string str)
         {
             bool res = false;
             string rev = "";
@@ -18,7 +18,7 @@ namespace CSharp_Tasks
             return res;
         }
 
-        public static bool palindrome2(int n)
+        public static bool Palindrome2M(int n)
         {
             bool res = false;
             int copyOfN = n;
